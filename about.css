@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+header > a {
+  text-align: center;
+}
+
+
+main {
+ display: grid;
+ grid-template-rows: 1fr 1fr 2fr 2fr;
+ grid-template-columns: 1fr 3fr;
+ border-style: ridge;
+}
+
+
+
+.has-border {
+  border-radius: 50px;
+  border: 2px solid #03dd5e;
+  background: none;
+  padding: 25px;
+  justify-content: space-between;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin-bottom: 50px;
+
+
+}
+
+h1{
+  color: #03dd5e ;
+
+
+}
+h2 {
+  margin: 1%;
+  font-style: italic;
+  font-size: large;
+  color: #03dd5e ;
+}
+
+h4 {
+  text-align: center;
+  font-family: monospace;
+  font-size:xx-large;
+  color: rgb(193, 222, 255);
+}
+
+p {
+  font-family:monospace;
+  font-size: large;
+  color: rgb(193, 222, 255);
+}
+
+.contact_column p {
+  text-align: center;
+  grid-row: 1/4;
+  grid-column: 1/2;
+}
+
+.contact_column {
+  display: flex;
+  grid-row: 1/4;
+  grid-column: 1/2;
+  margin: 150px;
+  border-style: ridge;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact_column img {
+  color: #ffffff;;
+  width: 150px;
+}
+
+.Profile {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+
+}
+
+.Profile img {
+  width: 200px;
+  height: 150px;
+  border-radius: 1000px;
+  margin: 10px;
+}
+
+.Areas_of_Expertise {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.Professional_History{
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+
+.Educational_History {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+
+.contact_item {
+  cursor: pointer;
+}
