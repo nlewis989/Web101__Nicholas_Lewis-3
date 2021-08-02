@@ -1,120 +1,134 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url("background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+
+  
+  
+    /* Class selector */
+    .logo {
+      width: auto;
+      height: 200px;
+      margin: auto;
+  }
+  
+    
+  
+
+
+.pic_box {
+    border-radius: 50px;
+    background: #222;
+    border-style: double;
+    width: 350px;
+    height: 350px;
+    text-align: center;
 }
 
-header {
+
+.portrait {
+    display: grid;
+    padding: 25px;
+    border-width: 10px;
+    padding-top: 10;
+
+}
+
+.name {
+    text-align: center;
+    text-underline-position: below;
+    text-shadow: 0 0 3px #1d4ff5, 0 0 5px #000000; 
+
+}
+
+img.portrait-image {
+    display: grid;
+    grid-row: auto;
+    width: 10vw;
+    border-radius: 50px;
+    margin: auto;
+}
+
+h1 {
+    display: grid;
+    text-decoration: underline;
+    box-shadow: -2px 2px 20px 15px rgba(0,0,0,0.75);
+  }
+
+.box {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;
-}
-
-header > a {
-  text-align: center;
-}
-
-
-main {
- display: grid;
- grid-template-rows: 1fr 1fr 2fr 2fr;
- grid-template-columns: 1fr 3fr;
- border-style: ridge;
+    width: 900px;
+    height: 2500px;
+    background-color: #cdf2ff72;
+    margin: 20px auto;
+    border: solid #1eff00;
+    border-radius: 100px;
 }
 
 
 
-.has-border {
-  border-radius: 50px;
-  border: 2px solid #03dd5e;
-  background: none;
-  padding: 25px;
-  justify-content: space-between;
-  padding-right: 100px;
-  padding-left: 100px;
-  margin-bottom: 50px;
-
-
-}
-
-h1{
-  color: #03dd5e ;
-
-
-}
-h2 {
-  margin: 1%;
-  font-style: italic;
-  font-size: large;
-  color: #03dd5e ;
-}
-
-h4 {
-  text-align: center;
-  font-family: monospace;
-  font-size:xx-large;
-  color: rgb(193, 222, 255);
-}
-
-p {
-  font-family:monospace;
-  font-size: large;
-  color: rgb(193, 222, 255);
-}
-
-.contact_column p {
-  text-align: center;
-  grid-row: 1/4;
-  grid-column: 1/2;
-}
-
-.contact_column {
-  display: flex;
-  grid-row: 1/4;
-  grid-column: 1/2;
-  margin: 150px;
-  border-style: ridge;
-  align-items: center;
-  flex-direction: column;
-}
-
-.contact_column img {
-  color: #ffffff;;
-  width: 150px;
-}
-
-.Profile {
-  grid-row: 1/2;
-  grid-column: 2/3;
-  display: flex;
-  align-items: center;
-
-}
-
-.Profile img {
-  width: 200px;
-  height: 150px;
-  border-radius: 1000px;
-  margin: 10px;
-}
-
-.Areas_of_Expertise {
-  grid-row: 2/3;
-  grid-column: 2/3;
-}
-
-.Professional_History{
-  grid-row: 3/4;
-  grid-column: 2/3;
-}
-
-.Educational_History {
-  grid-row: 4/5;
-  grid-column: 2/3;
+.paragraph {
+    display: grid;
+    width: 60vw;
+    text-align: center;
+    margin: auto;
+    font-family: Roboto;
+    font-size: 19px;
+    border-style: double;
+    border-width: thick;
+    box-shadow: -2px 2px 20px 15px rgba(0,0,0,0.75);
 }
 
 .contact_item {
-  cursor: pointer;
+  display: grid;
+  text-align: center;
+  
+}
+
+img{
+  margin-top: 50px;
+  max-width: 10%;
+  max-height: 50%;
+  border-radius: 50px;
+  box-shadow: -2px 2px 20px 15px rgba(0,0,0,0.75);
+}
+body {
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+
+
+
+header {
+  width: 80%;
+  margin: 5% auto;
+  background: #022230;
+  padding: 5px 0;
+  box-shadow: 0px 5px 0px #000000;
+  border-radius: 50px;
+  
+}
+  header ul {
+    list-style: none;
+    text-align: center;
+  }
+  header ul li {
+    display: inline-block;
+}
+header ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+header ul li a,
+header ul li a:after,
+header ul li a:before {
+  transition: all .5s;
+}
+header ul li a:hover {
+  color: #555;
 }
