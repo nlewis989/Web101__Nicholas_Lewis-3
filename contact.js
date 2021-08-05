@@ -4,6 +4,7 @@ function update(){
 
 
 function handleForm(e){
-   /// e.preventDefault()
+   e.preventDefault()
     alert("Message submitted")
 }
+
